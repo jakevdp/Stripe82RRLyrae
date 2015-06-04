@@ -1,0 +1,100 @@
+\documentclass{emulateapj}
+
+
+% has to be before amssymb it seems
+%\usepackage{color,hyperref}
+%\definecolor{linkcolor}{rgb}{0,0,0.5}
+%\hypersetup{colorlinks=true,linkcolor=linkcolor,citecolor=linkcolor,
+%            filecolor=linkcolor,urlcolor=linkcolor}
+%\usepackage{amssymb,amsmath}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+
+% For Python code
+\usepackage{listings}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{language=Python,
+        basicstyle=\footnotesize\ttfamily,
+        showspaces=false,
+        showstringspaces=false,
+        tabsize=2,
+        breaklines=false,
+        breakatwhitespace=true,
+        identifierstyle=\ttfamily,
+        keywordstyle=\bfseries\color[rgb]{0.133,0.545,0.133},
+        commentstyle=\color[rgb]{0.133,0.545,0.133},
+        stringstyle=\color[rgb]{0.627,0.126,0.941},
+    }
+
+% Draft watermark:
+%\usepackage{draftwatermark}
+%\SetWatermarkLightness{0.9}
+%\SetWatermarkScale{4}
+
+% Some macros
+\newcommand{\todo}[1]{{\color{red} [TODO: #1]}}
+\newcommand{\foreign}[1]{{\it #1}}
+
+\newcommand{\apriori}{\foreign{a priori}}
+\newcommand{\adhoc}{\foreign{ad hoc}}
+\newcommand{\etal}{\foreign{et\,al.}}
+\newcommand{\etc}{\foreign{etc.}}
+
+\newcommand{\Fig}[1]{Figure~\ref{fig:#1}}
+\newcommand{\fig}[1]{\Fig{#1}}
+\newcommand{\figlabel}[1]{\label{fig:#1}}
+\newcommand{\Eq}[1]{Equation~(\ref{eq:#1})}
+\newcommand{\eq}[1]{\Eq{#1}}
+\newcommand{\eqs}[2]{Equations~(\ref{eq:#1})-(\ref{eq:#2})}
+\newcommand{\eqlabel}[1]{\label{eq:#1}}
+\newcommand{\Sect}[1]{Section~\ref{sect:#1}}
+\newcommand{\sect}[1]{\Sect{#1}}
+\newcommand{\sects}[1]{Sections~#1}
+\newcommand{\App}[1]{Appendix~\ref{sect:#1}}
+\newcommand{\app}[1]{\App{#1}}
+\newcommand{\sectlabel}[1]{\label{sect:#1}}
+
+\usepackage[normalem]{ulem}
+\newcommand{\new}[1]{{\color{red} #1}}
+\newcommand{\old}[1]{{\sout{#1}}}
+
+
+\begin{document}
+
+\title{Stripe 82 Deep Dive: RR Lyrae Past the Survey Limit}
+
+\newcommand{\escience}{1}
+\newcommand{\columbia}{2}
+\newcommand{\uwastro}{3}
+
+\author{Jacob T. VanderPlas\altaffilmark{\escience}}
+\author{Adrian Price-Whelan\altaffilmark{\columbia}}
+\author{{\v Z}eljko Ivezi{\'c}\altaffilmark{\uwastro}}
+
+\altaffiltext{\escience}{eScience Institute, University of Washington}
+\altaffiltext{\columbia}{Department of Astronomy, Columbia University}
+\altaffiltext{\uwastro}{Department of Astronomy, University of Washington}
+
+
+\begin{abstract}
+We present umpteen of the faintest RR Lyrae ever found. It's the bomb.
+\end{abstract}
+
+\section{Introduction}
+\sectlabel{introduction}
+
+Some relevant references are \citet{Vanderplas2015}, \citet{Sesar2010}, \citet{Oluseyi12}.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+
+\bibliographystyle{apj}
+\bibliography{paper}
+
+\end{document}

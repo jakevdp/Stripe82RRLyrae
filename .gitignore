@@ -55,3 +55,10 @@ docs/_build/
 
 # PyBuilder
 target/
+
+
+# emacs
+*~
+
+# builds
+writeup/*.pdf
