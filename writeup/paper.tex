@@ -1,5 +1,5 @@
-\documentclass{emulateapj}
-
+% \documentclass{emulateapj}
+\documentclass[letterpaper,12pt,preprint]{aastex}
 
 % has to be before amssymb it seems
 %\usepackage{color,hyperref}
@@ -68,19 +68,35 @@
 
 \newcommand{\escience}{1}
 \newcommand{\columbia}{2}
-\newcommand{\uwastro}{3}
+\newcommand{\nyu}{3}
+\newcommand{\cds}{4}
+\newcommand{\mpia}{5}
+\newcommand{\uwastro}{6}
 
-\author{Jacob T. VanderPlas\altaffilmark{\escience}}
-\author{Adrian Price-Whelan\altaffilmark{\columbia}}
-\author{{\v Z}eljko Ivezi{\'c}\altaffilmark{\uwastro}}
+\author{Jacob T. VanderPlas\altaffilmark{\escience}, 
+	    Adrian M. Price-Whelan\altaffilmark{\columbia},
+	    David W. Hogg\altaffilmark{\nyu,\cds,\mpia},
+	    {\v Z}eljko Ivezi{\'c}\altaffilmark{\uwastro}}
 
 \altaffiltext{\escience}{eScience Institute, University of Washington}
-\altaffiltext{\columbia}{Department of Astronomy, Columbia University}
+\altaffiltext{\columbia}{Department of Astronomy, Columbia University, 550 W 120th St., New York, NY 10027, USA}
+\altaffiltext{\nyu}{Center for Cosmology and Particle Physics, Department of Physics, New York University, 4 Washington Place, New York, NY, 10003, USA}
+\altaffiltext{\cds}{Center for Data Science, New York University, 4 Washington Place, New York, NY, 10003, USA}
+\altaffiltext{\mpia}{Max-Planck-Institut f\"ur Astronomie, K\"onigstuhl 17, D-69117 Heidelberg, Germany}
 \altaffiltext{\uwastro}{Department of Astronomy, University of Washington}
 
-
 \begin{abstract}
-We present umpteen of the faintest RR Lyrae ever found. It's the bomb.
+% Context
+At distances larger than $\approx$30 kpc, RR Lyrae stars show strong spatial inhomogeneity and have been shown to trace accreted structures in the Galactic halo. Simulations predict that stars in the extreme halo --- more than 100 kpc in Galactocentric radius --- are predominantly associated with unrelaxed, accreted structures such as tidal streams, shells, and the progenitor stellar systems themselves. Such features have been observed at large distances around a select few nearby galaxies, however it is yet unknown what structures our own Galaxy hosts in the outer halo.
+% Aims
+In this work, we aim to discover RR Lyrae stars at distances larger than 100 kpc with the hope and expectation that these stars are associated with interesting accreted structures in the halo of the Milky Way. 
+% Methods
+We use reprocessed photometry of the Stripe 82 region of the Sloan Digital Sky Survey and push the detection limit of RR Lyrae stars further both through this more precise photometry and less restrictive modeling of the light curves. In particular, since RR Lyrae stars exhibit $\approx$1 mag variability in the SDSS bandpasses, by using a likelihood-based, multi-band model for period determination we do not require detection of the source at all epochs.
+% Results
+We find XX RR Lyrae stars ...
+% Conclusions
+Huh?
+
 \end{abstract}
 
 \section{Introduction}
@@ -88,11 +104,17 @@ We present umpteen of the faintest RR Lyrae ever found. It's the bomb.
 
 Some relevant references are \citet{Vanderplas2015}, \citet{Sesar2010}, \citet{Oluseyi12}.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\section{Methods}
+\sectlabel{methods}
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+\section{Results}
+\sectlabel{results}
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+\section{Discussion}
+\sectlabel{discussion}
+
+\section{Conclusions}
+\sectlabel{conclusion}
 
 \bibliographystyle{apj}
 \bibliography{paper}
